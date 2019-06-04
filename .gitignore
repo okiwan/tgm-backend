@@ -104,5 +104,6 @@ venv.bak/
 .mypy_cache/
 
 # Additional files
+.DS_Store
 .idea/
 zip/
