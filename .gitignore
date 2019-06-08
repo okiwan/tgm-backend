@@ -104,6 +104,8 @@ venv.bak/
 .mypy_cache/
 
 # Additional files
+*.mdb
+*.csv
 .DS_Store
 .idea/
 zip/
