@@ -11,9 +11,10 @@ https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
 import os
+import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,9 +27,10 @@ SECRET_KEY = '=xzy0*ft==#9_28(#j5e+nxz3b)1!v5pca6+*_fnhjm@&f5-q!'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'travel-groups-manager.herokuapp.com',
 ]
 
+#    'localhost',
+#    'travel-groups-manager.herokuapp.com',
 
 # Application definition
 
@@ -125,5 +127,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Settings prepared for development on Heroku platform
+django_heroku.settings(locals())
