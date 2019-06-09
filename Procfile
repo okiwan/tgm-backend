@@ -1,1 +1,1 @@
-backend: gunicorn tgm.tgm.wsgi
+backend: gunicorn tgm.wsgi
