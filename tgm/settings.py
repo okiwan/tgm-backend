@@ -25,7 +25,9 @@ SECRET_KEY = '=xzy0*ft==#9_28(#j5e+nxz3b)1!v5pca6+*_fnhjm@&f5-q!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'travel-groups-manager.herokuapp.com',
+]
 
 
 # Application definition
