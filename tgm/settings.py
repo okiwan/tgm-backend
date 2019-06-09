@@ -26,11 +26,7 @@ SECRET_KEY = '=xzy0*ft==#9_28(#j5e+nxz3b)1!v5pca6+*_fnhjm@&f5-q!'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-]
-
-#    'localhost',
-#    'travel-groups-manager.herokuapp.com',
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -130,5 +126,6 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Settings prepared for development on Heroku platform
+# Django-Heroku module will help configuring the rest of
+# settings to make application work on the environment.
 django_heroku.settings(locals())
